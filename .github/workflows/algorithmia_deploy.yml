@@ -14,7 +14,7 @@ jobs:
         with:
           ref: ${{github.sha}}
       - name: Deploy Model to Algorithmia
-        uses: aslisabanci/algorithmia_ci_modeldeployment@master
+        uses: algorithmiaio/algorithmia-modeldeployment-action@master
         env:
           HEAD_COMMIT_MSG: ${{ github.event.head_commit.message }}
         with:
