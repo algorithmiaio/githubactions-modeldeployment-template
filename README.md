@@ -8,9 +8,10 @@ After you create an algorithm on Algorithmia as the scalable inference endpoint 
 
 
 ## Template Repo Contents
-
+![](images/contents.png)
 
 ## Fitting With Organizational Responsibilities
+![](images/responsibilities.png)
 
 ## Example usages
 Check out the two example ML repos that incorporate this Github Action to continuously deploy
