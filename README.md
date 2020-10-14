@@ -1,4 +1,4 @@
-# Template ML Repository for Continous Deployment to Algorithmia via Github Actions
+# Template ML Repository for Continuous Deployment to Algorithmia via Github Actions
 
 This is a template ML repository to get started with [Algorithmia Model Deployment Github Action](https://github.com/algorithmiaio/algorithmia-modeldeployment-action) integration, containing some necessary pieces of the integration as a starter kit. 
 
