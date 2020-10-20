@@ -2,8 +2,6 @@ import Algorithmia
 import json
 import os.path
 import joblib
-import xgboost
-import pandas as pd
 import hashlib
 
 
@@ -11,13 +9,13 @@ client = Algorithmia.client()
 
 
 def load_model_manifest(rel_path="model_manifest.json"):
-    """Loads the model manifest file as a dict. 
+    """Loads the model manifest file as a dict.
     A manifest file has the following structure:
     {
       "model_filepath": Uploaded model path on Algorithmia data collection
       "model_md5_hash": MD5 hash of the uploaded model file
       "model_origin_repo": Model development repository with the Github CI workflow
-      "model_origin_ref": Branch of the model development repository related to the trigger of the CI workflow, 
+      "model_origin_ref": Branch of the model development repository related to the trigger of the CI workflow,
       "model_origin_commit_SHA": Commit SHA related to the trigger of the CI workflow
       "model_origin_commit_msg": Commit message related to the trigger of the CI workflow
       "model_uploaded_utc": UTC timestamp of the automated model upload
@@ -75,4 +73,3 @@ if __name__ == "__main__":
     # Now the apply() function will be able to access the locally loaded model
     algo_result = apply("Test input")
     print(algo_result)
-
