@@ -1,4 +1,4 @@
-# Template ML Repository for Continous Deployment to Algorithmia via Github Actions
+# Template ML Repository for Continuous Deployment to Algorithmia via Github Actions
 
 This is a template ML repository to get started with [Algorithmia Model Deployment Github Action](https://github.com/algorithmiaio/algorithmia-modeldeployment-action) integration, containing some necessary pieces of the integration as a starter kit. 
 
@@ -8,12 +8,14 @@ After you create an algorithm on Algorithmia as the scalable inference endpoint 
 
 
 ## Template Repo Contents
-
+![](images/contents.png)
 
 ## Fitting With Organizational Responsibilities
+Thinking about fitting this automation into mature organizations' workflows, and how it will play out for teams with separate concerns and responsibilities, the template repository can act as a starter kit for the DevOps or the IT teams. After configuring this starter repository with necessary inputs, they can hand it off to the data science team so that they can start working on it and continuously deploy their artifacts to Algorithmia, as they iterate.
+![](images/responsibilities.png)
 
 ## Example usages
-Check out the two example ML repos that incorporate this Github Action to continuously deploy
+Check out the two example ML repos that take this template repository as a starter and integrate the Algorithmia Github Action to continuously deploy
   * [to an Algorithmia algorithm backed by Algorithmia](https://github.com/algorithmiaio/githubactions-modeldeployment-demo-algorithmiaalgo)
   * [to an Algorithmia algorithm backed by Github](https://github.com/algorithmiaio/githubactions-modeldeployment-demo-githubalgo)
 
